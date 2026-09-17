@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+//Take a signal letter (R, Y, G) as input and print the corresponding action (Stop, Wait, Go)
+//using switch.
+
+int main() {
+    char signal;
+
+    printf("Enter signal (R, Y, G): ");
+    scanf(" %c", &signal);
+
+    switch (signal) {
+        case 'R':
+            printf("Stop");
+            break;
+
+        case 'Y':
+            printf("Wait");
+            break;
+
+        case 'G':
+            printf("Go");
+            break;
+
+        default:
+            printf("Invalid signal");
+    }
+
+    return 0;
+}
+
